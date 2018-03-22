@@ -332,3 +332,68 @@ h2 {
       margin: 0 auto 2em; }
     .hero h1::after {
       margin: 2em auto 0; }
+
+.welcome {
+  display: flex;
+  color: rgba(255, 255, 255, 0.7); }
+  .welcome h2 {
+    color: #ffffff; }
+    .welcome h2::after {
+      content: '';
+      width: 20%;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.5);
+      display: block;
+      margin: 1em auto 0; }
+  @supports (display: grid) {
+    .welcome {
+      display: grid;
+      grid-template-columns: minmax(4em, 1fr) minmax(auto, 30em) minmax(4em, 1fr); } }
+
+.welcome-middle {
+  background: #223843;
+  padding: 2.5em 5vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.welcome-left, .welcome-right {
+  object-fit: cover;
+  min-height: 100%;
+  min-width: 100%;
+  display: block; }
+
+.about-me {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 50em;
+  margin-top: 3em; }
+  .about-me::after {
+    content: '';
+    display: block;
+    clear: both; }
+
+.about-img {
+  float: left;
+  margin-right: 1em; }
+
+.about-title {
+  margin-bottom: .25em; }
+
+.about-subtitle {
+  margin: .5em 0; }
+
+@supports (display: grid) {
+  .about-me {
+    display: grid;
+    grid-template-columns: [port-start] minmax(6em, 1fr) [name-start] minmax(6em, 1fr) [img-end] 2fr [port-end]; }
+  .about-img {
+    grid-column: port-start / img-end;
+    grid-row: 1 / 2; }
+  .about-title {
+    grid-column: name-start / port-end;
+    grid-row: 1 / 2;
+    align-self: end; }
+  .about-subtitle, .about-text {
+    grid-column: port-start / port-end; } }
