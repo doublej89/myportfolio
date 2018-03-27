@@ -14,9 +14,17 @@
         text-align: center;
         line-height: 2;
 
+        @include medq {
+            font-size: 3vw;
+        }
+
         span {
             @include sans-serif($fs: 5.5rem, $color: $accent);
             display: block;
+
+            @include medq {
+                font-size: 10vw;
+            }
         }
 
         &::before, &::after {

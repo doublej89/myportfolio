@@ -11,3 +11,9 @@
         clear: both;
     }
 }
+
+@mixin medq($width: 50em) {
+    @media (min-width: $width) {
+        @content;
+    }
+}

@@ -3,6 +3,10 @@ body {
     font-family: $ff-s;
     line-height: 1.6;
     font-size: .875rem;
+
+    @media (min-width: 50em) {
+        font-size: 1.125rem;
+    }
 }
 
 h1, h2, p {
@@ -14,9 +18,8 @@ h1 {
     color: $accent;
     line-height: 1;
     font-size: 3.13rem;
-    span {
-        @include sans-serif($fs: 5.5rem, $color: $accent);
-        display: block;
+    @include medq {
+        font-size: 4.25rem;
     }
 }
 
@@ -26,4 +29,7 @@ img {
 
 h2 {
    @include sans-serif($fs: 2rem);
+   @include medq {
+        font-size: 3rem;
+    }
 }
