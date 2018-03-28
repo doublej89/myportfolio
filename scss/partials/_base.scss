@@ -3,6 +3,7 @@ body {
     font-family: $ff-s;
     line-height: 1.6;
     font-size: .875rem;
+    overflow-x: hidden;
 
     @media (min-width: 50em) {
         font-size: 1.125rem;

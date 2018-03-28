@@ -6,98 +6,114 @@
 	<title></title>
 </head>
 <body>
-	<div class="hero">
-		<h1>Welcome to my <span>Portfolio</span></h1>
+	<nav>
+		<ul>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+	<div class="container-all">
+		<div class="hero" id="home">
+			<div class="menu">
+				<img src="img/hamburger.svg" alt="hamburger" class="menu-button">
+				<img src="img/closeicon.svg" alt="close" class="close-button">
+			</div>		
+			<h1>Welcome to my <span>Portfolio</span></h1>
+		</div>
+		<div class="welcome">
+			<div class="welcome-left">
+				<img src="img/welcome-01.png" alt="laptop on table">
+			</div>
+			<div class="welcome-middle">
+				<h2>Making it Happen</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rhoncus, dolor eu interdum sodales, sapien lectus luctus ligula, nec porttitor tellus lorem id risus.</p>
+			</div>
+			<div class="welcome-right">
+				<img src="img/welcome-02.png">
+			</div>
+		</div>
+		<section class="about-me" id="about">
+			<img src="img/joe-portfolio.png" class="about-img">
+			<h1 class="about-title">My Portfolio</h1>
+			<h2 class="about-subtitle">Developer</h2>
+			<div class="about-text">
+				<p>Ut semper augue eget dictum mattis. Mauris convallis sapien ut lorem consectetur interdum. Cras egestas id sapien non interdum. Nunc ullamcorper fringilla augue, non lobortis quam ultrices eu. Integer aliquam ipsum in nisi malesuada, tempor consectetur libero convallis. Proin convallis augue gravida arcu cursus laoreet. Morbi porta scelerisque condimentum.</p>
+				<p>Vivamus non luctus ex. Fusce ac mollis magna. In efficitur neque a finibus pretium. Maecenas nunc orci, interdum in semper vitae, scelerisque at odio. Curabitur sed erat dictum, posuere tortor porta, euismod libero.</p>
+			</div>
+		</section>
+		<section class="portfolio" id="portfolio">
+			<h1>My Work</h1>
+			<div class="portfolio-items">
+				<figure class="portfolio-item featured">
+					<img src="img/portfolio-01.jpg" class="portfolio-img">
+					<figcaption>
+						<h2 class="portfolio-title">Project Name</h2>
+						<p class="portfolio-desc">A short description could go here</p>
+						<a href="#" class="portfolio-link">More Info</a>
+					</figcaption>
+				</figure>
+				<figure class="portfolio-item">
+					<img src="img/portfolio-02.jpg" class="portfolio-img">
+					<figcaption>
+						<h2 class="portfolio-title">Project Name</h2>
+						<p class="portfolio-desc">A short description could go here</p>
+						<a href="#" class="portfolio-link">More Info</a>
+					</figcaption>
+				</figure>
+				<figure class="portfolio-item">
+					<img src="img/portfolio-03.jpg" class="portfolio-img">
+					<figcaption>
+						<h2 class="portfolio-title">Project Name</h2>
+						<p class="portfolio-desc">A short description could go here</p>
+						<a href="#" class="portfolio-link">More Info</a>
+					</figcaption>
+				</figure>
+				<figure class="portfolio-item">
+					<img src="img/portfolio-04.jpg" class="portfolio-img">
+					<figcaption>
+						<h2 class="portfolio-title">Project Name</h2>
+						<p class="portfolio-desc">A short description could go here</p>
+						<a href="#" class="portfolio-link">More Info</a>
+					</figcaption>
+				</figure>
+				<figure class="portfolio-item">
+					<img src="img/portfolio-05.jpg" class="portfolio-img">
+					<figcaption>
+						<h2 class="portfolio-title">Project Name</h2>
+						<p class="portfolio-desc">A short description could go here</p>
+						<a href="#" class="portfolio-link">More Info</a>
+					</figcaption>
+				</figure>
+			</div>
+		</section>
+		<section class="contact" id="contact">
+			<h1>Contact Me</h1>
+			<form action="">
+				<label class="name">Name:
+					<input type="text" name="name" id="name">
+				</label>
+				<label class="email">Email:
+					<input type="email" id="email">
+				</label>
+				<label message="message" class="message">Message:
+					<textarea id="message"></textarea>
+				</label>
+				<input type="submit" value="SEND" class="btn">
+			</form>
+		</section>
+		<footer>
+			<p>Follow me on social media</p>
+			<div class="social-icons">
+				<img src="img/twitter.svg" class="social-icon">
+				<img src="img/github.svg" class="social-icon">
+				<img src="img/instagram.svg" class="social-icon">
+			</div>
+			<p class="copyright">Copyright 2018 JJ</p>
+		</footer>
 	</div>
-	<div class="welcome">
-		<div class="welcome-left">
-			<img src="img/welcome-01.png" alt="laptop on table">
-		</div>
-		<div class="welcome-middle">
-			<h2>Making it Happen</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rhoncus, dolor eu interdum sodales, sapien lectus luctus ligula, nec porttitor tellus lorem id risus.</p>
-		</div>
-		<div class="welcome-right">
-			<img src="img/welcome-02.png">
-		</div>
-	</div>
-	<section class="about-me">
-		<img src="img/joe-portfolio.png" class="about-img">
-		<h1 class="about-title">My Portfolio</h1>
-		<h2 class="about-subtitle">Developer</h2>
-		<div class="about-text">
-			<p>Ut semper augue eget dictum mattis. Mauris convallis sapien ut lorem consectetur interdum. Cras egestas id sapien non interdum. Nunc ullamcorper fringilla augue, non lobortis quam ultrices eu. Integer aliquam ipsum in nisi malesuada, tempor consectetur libero convallis. Proin convallis augue gravida arcu cursus laoreet. Morbi porta scelerisque condimentum.</p>
-			<p>Vivamus non luctus ex. Fusce ac mollis magna. In efficitur neque a finibus pretium. Maecenas nunc orci, interdum in semper vitae, scelerisque at odio. Curabitur sed erat dictum, posuere tortor porta, euismod libero.</p>
-		</div>
-	</section>
-	<section class="portfolio">
-		<h1>My Work</h1>
-		<div class="portfolio-items">
-			<figure class="portfolio-item featured">
-				<img src="img/portfolio-01.jpg" class="portfolio-img">
-				<figcaption>
-					<h2 class="portfolio-title">Project Name</h2>
-					<p class="portfolio-desc">A short description could go here</p>
-					<a href="#" class="portfolio-link">More Info</a>
-				</figcaption>
-			</figure>
-			<figure class="portfolio-item">
-				<img src="img/portfolio-02.jpg" class="portfolio-img">
-				<figcaption>
-					<h2 class="portfolio-title">Project Name</h2>
-					<p class="portfolio-desc">A short description could go here</p>
-					<a href="#" class="portfolio-link">More Info</a>
-				</figcaption>
-			</figure>
-			<figure class="portfolio-item">
-				<img src="img/portfolio-03.jpg" class="portfolio-img">
-				<figcaption>
-					<h2 class="portfolio-title">Project Name</h2>
-					<p class="portfolio-desc">A short description could go here</p>
-					<a href="#" class="portfolio-link">More Info</a>
-				</figcaption>
-			</figure>
-			<figure class="portfolio-item">
-				<img src="img/portfolio-04.jpg" class="portfolio-img">
-				<figcaption>
-					<h2 class="portfolio-title">Project Name</h2>
-					<p class="portfolio-desc">A short description could go here</p>
-					<a href="#" class="portfolio-link">More Info</a>
-				</figcaption>
-			</figure>
-			<figure class="portfolio-item">
-				<img src="img/portfolio-05.jpg" class="portfolio-img">
-				<figcaption>
-					<h2 class="portfolio-title">Project Name</h2>
-					<p class="portfolio-desc">A short description could go here</p>
-					<a href="#" class="portfolio-link">More Info</a>
-				</figcaption>
-			</figure>
-		</div>
-	</section>
-	<section class="contact">
-		<h1>Contact Me</h1>
-		<form action="">
-			<label class="name">Name:
-				<input type="text" name="name" id="name">
-			</label>
-			<label class="email">Email:
-				<input type="email" id="email">
-			</label>
-			<label message="message" class="message">Message:
-				<textarea id="message"></textarea>
-			</label>
-			<input type="submit" value="SEND" class="btn">
-		</form>
-	</section>
-	<footer>
-		<p>Follow me on social media</p>
-		<div class="social-icons">
-			<img src="img/twitter.svg" class="social-icon">
-			<img src="img/github.svg" class="social-icon">
-			<img src="img/instagram.svg" class="social-icon">
-		</div>
-		<p class="copyright">Copyright 2018 JJ</p>
-	</footer>
+	
+	<script src="js/main.js"></script>
 </body>
 </html>
